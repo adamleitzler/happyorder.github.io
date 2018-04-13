@@ -1,0 +1,203 @@
+// Styling for the download section
+section.download {
+    z-index: 2;
+    position: relative;
+    margin-top: 0px;
+    padding: 150px 0;
+    background-color: #EAEAEA;
+    background-image: url('../img/bg-download.jpg');
+    background-position: center;
+    background-size: cover;
+    color: $theme-fourth;
+    overflow: hidden;
+    .iphone {
+        height: 0px;
+        position: absolute;
+        left: 65%;
+        top: 20%;
+        overflow: visible;
+        z-index: 100;
+        //bottom: -5px;
+        @media(min-width: 840px) {
+            height: 350px;
+        }
+        @media(min-width: 992px) {
+            height: 400px;
+        }
+        @media(min-width: 1200px) {
+            height: 800px;
+        }
+    }
+    h1 {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 900;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+        margin-bottom: 0px;
+        p {
+            font-size: 21px;
+            color: #D3364F;
+            font-weight: 900;
+            margin-top: -5px;
+            margin-bottom: 0px;
+        }
+    }
+    .badges {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        a {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .badge-link {
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            img {
+                height: 42px;
+            }
+            @media(min-width: 768px) {
+                margin-bottom: 0;
+                img {
+                    height: 50px;
+                }
+            }
+            @media(min-width: 992px) {
+                img {
+                    height: 60px;
+                }
+            }
+        }
+        @media(min-width: 992px) {
+            padding-bottom: 50px;
+        }
+    }
+    .download-heading {
+        font-size: 34px;
+        p {
+            font-size: 18px;
+            margin-top: 0px;
+        }
+        @media(min-width: 768px) {
+            font-size: 52px;
+            p {
+                font-size: 24px;
+                margin-top: -5px;
+            }
+        }
+        @media(min-width: 992px) {
+            font-size: 80px;
+            p {
+                font-size: 40px;
+                margin-top: -5px;
+            }
+        }
+    }
+    input.telinput {
+        width: 250px;
+        border-radius: 4px;
+        border: 0px;
+        line-height: 20px;
+        font-size: 20px;
+        padding: 10px 0px;
+        outline: none;
+        margin: 0px 10px;
+        &::-webkit-input-placeholder {
+            color: #DDDDDD;
+        }
+        &::-moz-placeholder {
+            color: #DDDDDD;
+        }
+        &:-ms-input-placeholder {
+            color: #DDDDDD;
+        }
+        &:-moz-placeholder {
+            color: #DDDDDD;
+        }
+        @media(min-width: 768px) {
+            width: 300px;
+        }
+    }
+    .sendlink-wrapper {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        @media(min-width: 768px) {
+            margin-top: 90px;
+            margin-bottom: 100px;
+        }
+    }
+    .sendlink {
+        background-color: #C0C0C0;
+        border-radius: 4px;
+        border: 0px;
+        line-height: 22px;
+        font-size: 16px;
+        padding: 10px 30px;
+        margin-top: 10px;
+        color: #A2A2A2;
+        outline: none;
+        i {
+            margin-right: 10px;
+        }
+        i.loading {
+            margin-right: 0px;
+            font-size: 20px;
+            -webkit-animation: spin 1s infinite linear;
+            -moz-animation: spin 1s infinite linear;
+            -o-animation: spin 1s infinite linear;
+            animation: spin 1s infinite linear;
+        }
+        &.active {
+            background-color: green;
+            color: #fff;
+            -webkit-animation: pulse 1s ease infinite;
+            -moz-animation: pulse 1s ease infinite;
+            -ms-animation: pulse 1s ease infinite;
+            -o-animation: pulse 1s ease infinite;
+            animation: pulse 1s ease infinite;
+        }
+        &.sent {
+            background-color: green;
+            color: #fff;
+        }
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        @media(min-width: 768px) {
+            line-height: 30px;
+            height: 48px;
+            font-size: 20px;
+            padding: 9px 30px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    }
+    @media(min-width: 768px) {
+        h1 {
+            font-size: 38px;
+            p {
+                font-size: 26px;
+            }
+        }
+    }
+    @media(min-width: 992px) {
+        .logo {
+            margin-bottom: 55px;
+            width: 150px;
+        }
+        h1 {
+            font-size: 38px;
+            color: #fff;
+            font-weight: 900;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+            margin-bottom: 0px;
+            p {
+                font-size: 26px;
+                color: #D3364F;
+                font-weight: 900;
+                margin-top: -10px;
+            }
+        }
+    }
+}

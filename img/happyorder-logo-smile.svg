@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="384px" height="186px" viewBox="0 0 384 186" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Smile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Dark2" transform="translate(-528.000000, -448.000000)" fill="#D3364F">
+            <g id="happyorder_logo_multi_black" transform="translate(528.000000, 391.000000)">
+                <path d="M363.917749,96 C350.944373,179.275551 278.914008,243 192,243 C105.085992,243 33.0556274,179.275551 20.0822513,96 L0,96 L0,57 L90,57 L90,96 L65.830029,96 C78.241808,154.282899 130.015566,198 192,198 C253.984434,198 305.758192,154.282899 318.169971,96 L294,96 L294,57 L384,57 L384,96 L363.917749,96 Z" id="Smile"></path>
+            </g>
+        </g>
+    </g>
+</svg>

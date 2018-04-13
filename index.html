@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Happy Order har en beprövad teknik för att låta kunden boka, beställa och betala smidigt och säkert direkt med sin telefon.">
+    <meta name="author" content="Happy Order AB">
+
+    <title>Beställ mat till bordet på restaurangen, betala direkt | Gör en Happy Order</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://happyorder.io/img/favicon.png" />
+    <!--<link rel="icon" type="image/x-icon" href="https://happyorder.io/img/favicon.png" />-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.min.css?v=2" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KH68L7Q');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <style>
+        .typeform-widget {
+            width: 100vw;
+            height: 400px;
+        }
+        
+        .contactphone {
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH68L7Q"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="popup" role="alert">
+        <div class="popup-container">
+            <p>Tack för ditt meddelande,<br>vi hör av oss inom kort!</p>
+            <a href="#0" class="popup-close img-replace">Sträng</a>
+        </div>
+        <!-- cd-popup-container -->
+    </div>
+    <!-- cd-popup -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/happyorder-logo.svg" alt="Happy Order" class="logo"></a>
+            <a class="navbar-brand js-scroll-trigger smile-wrapper" href="#page-top"><img src="img/happyorder-logo-smile.svg" alt="Happy Order" class="logo-smile"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#download">Ladda ner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#features">Funktioner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">Om oss</a>
+                    </li>
+                    <li class="nav-item mobilehidden">
+                        <a class="nav-link js-scroll-trigger" href="#register">Beställ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+                    </li>
+                    <li class="nav-item mobilehidden">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-power-off"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead">
+        <div class="image-center-top">
+            <img src="img/bbb.png" class="img-bbb" alt="Boka, beställ och betal smidigt och säkert med din mobil">
+        </div>
+        <div class="image-center-bottom">
+            <img src="img/phones-test.png" class="img-phones" alt="Happy Order - Vi förenklar ditt restaurangbesök!">
+        </div>
+    </header>
+    <section class="download text-center" id="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+
+                    <h1 class="download-heading">Ladda ner Happy Order
+                        <!--<p>via app store eller få länken skickad via sms!</p>-->
+                    </h1>
+                    <!--
+                    <div class="sendlink-wrapper">
+                        <form id="frm" name="frm">
+                            <input type="hidden" name="ajax" value="1" />
+                            <input type="tel" id="phone" name="phone" class="telinput">
+                            <button type="submit" class="sendlink"><i class="fa fa-paper-plane"></i>Skicka länken!</button>
+                            <div class="error" style="display: none;"></div>
+                        </form>
+                    </div>
+                    -->
+                    <div class="badges">
+                        <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.appuniverse.orderapp"><img src="img/google-play-badge.svg" alt="Ladda ner Happy Order på Google Play"></a>
+                        <a class="badge-link" href="https://itunes.apple.com/se/app/happy-order/id1200904645?mt=8"><img src="img/app-store-badge.svg" alt="Ladda ner Happy Order på App Store"></a>
+                    </div>
+                </div>
+                <img class="iphone" src="img/iphone-x-table.png" alt="Ladda ner Happy Order där appar finns!">
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h1>Happy funktioner</h1>
+                <p>Skapat av restauranger, för restauranger!</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-12 mx-auto">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6 col-lg-4">
+                                <div class="feature-item">
+                                    <h2><i class="icon-magic-wand text-primary"></i> Branding</h2>
+                                    <p>Ändra färger, logotyper med mera för att anpassa Happy Order till er verksamhet!</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <div class="feature-item">
+                                    <h2><i class="icon-clock text-primary"></i> Öppettider</h2>
+                                    <p>Ni hanterar själva era öppettider via kontrollpanelen.</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <div class="feature-item">
+                                    <h2><i class="icon-organization text-primary"></i> Bordsmappning</h2>
+                                    <p>Hantera beställningar i flera olika zoner, vår bordsmappning ser till att bongen hamnar på rätt ställe!</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <div class="feature-item">
+                                    <h2><i class="icon-drawer text-primary"></i> Digitala kvitton</h2>
+                                    <p>Kunden hittar sina kvitton direkt i appen, de finns även tillängliga på webben.</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <div class="feature-item">
+                                    <h2><i class="icon-tag text-primary"></i> Kuponger</h2>
+                                    <p>Skapa unika/fasta rabattkoder enkelt i vår kontrollpanel, skriv ut koderna på era bongskrivare!</p>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="col-6 col-lg-4">
+                                <div class="feature-item">
+                                    <h2><i class="icon-graph text-primary"></i> Statistik</h2>
+                                    <p>I kontrollpanelen hittar du enkelt alla rapporter samt statistik som du behöver.</p>
+                                </div>
+                            </div>
+                            -->
+                            <div class="col-6 col-lg-4">
+                                <div class="feature-item">
+                                    <h2><i class="icon-briefcase text-primary"></i> Orderhantering</h2>
+                                    <p>Hantera enkelt era beställningar via mobil eller webben!</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <div class="feature-item">
+                                    <h2><i class="icon-grid text-primary"></i> Artikelhantering</h2>
+                                    <p>Det är enklet att både hantera befintliga produkter samt att skapa nya!</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4">
+                                <div class="feature-item">
+                                    <h2><i class="icon-link text-primary"></i> Attributer</h2>
+                                    <p>Välj stekgrad, eller kanske storlek på whiskeyn. </p>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="col-6 col-lg-4">
+                                <div class="feature-item">
+                                    <h2><i class="icon-social-facebook text-primary"></i> Sociala medier</h2>
+                                    <p>Anslut ert Facebook-konto och marknadsför er med ett knapptryck!</p>
+                                </div>
+                            </div>
+                            -->
+                            <div class="col-6 col-lg-4">
+                                <div class="feature-item">
+                                    <h2><i class="icon-emotsmile text-primary"></i> Kundkontakt</h2>
+                                    <p>Nöjda kunder = glada kunder, Happy Order underlättar kundkontakten!</p>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="col-6 col-lg-4">
+                                <div class="feature-item">
+                                    <h2><i class="icon-chemistry text-primary"></i> Nya fuktioner</h2>
+                                    <p>Vi arbetar hela tiden med att utveckla nya smarta funktioner!</p>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="counters" id="counters">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h4>Happy numbers</h4>
+                <!--<p>lite kort information i siffror</p>-->
+            </div>
+            <div class="row">
+                <div id="projectFacts" class="sectionClass">
+                    <div class="fullWidth eight columns">
+                        <div class="projectFactsWrap ">
+                            <div class="item wow fadeInUpBig animated animated" data-number="0">
+                                <i><img src="img/icon-orders.png" alt="Happy Orders"></i>
+                                <p id="ho-orders" class="number">0</p>
+                                <span></span>
+                                <p>beställningar</p>
+                            </div>
+                            <div class="item wow fadeInUpBig animated animated" data-number="0">
+                                <i><img src="img/icon-users.png" alt="Happy Användare"></i>
+                                <p id="ho-customers" class="number">0</p>
+                                <span></span>
+                                <p>glada användare</p>
+                            </div>
+                            <div class="item wow fadeInUpBig animated animated" data-number="0">
+                                <i><img src="img/icon-products.png" alt="Happy Produkter"></i>
+                                <p id="ho-products" class="number">0
+
+                                </p>
+                                <span></span>
+                                <p>sålda produkter</p>
+                            </div>
+                            <div class="item wow fadeInUpBig animated animated" data-number="0">
+                                <i><img src="img/icon-timesave.png" alt="Happy Tidsbesparing"></i>
+                                <p id="ho-savings" class="number">0</p>
+                                <span></span>
+                                <p>timmar sparade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center numbers text-center">
+                <p>Happy Order har en beprövad teknik för att låta kunden boka, beställa och betala smidigt och säkert direkt med sin telefon. Genom att kopiera och anpassa arbetsmomenten från restaurang, bar och kök fungerar tjänsten omgående och utan krångliga
+                    anpassningar och integrationer.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h4>Några av våra kunder</h4>
+                <!--<p>lite kort information i siffror</p>-->
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-12 col-lg-4"><img class="person" src="img/kunder/anna.jpg" alt="Pitcher's i Örebro - Anna Svedberg" title="Pitcher's i Örebro - Anna Svedberg"><img class="logotyp" src="img/kunder/1301.png" alt="Pitcher's i Örebro" title="Pitcher's i Örebro"></div>
+                        <div class="col-11 col-lg-7 speech-bubble">- Vi använder Happy Order både i restaurangen och för våra aktiviteter som bowling och minigolf. Detta funkar perfekt när vi har hög belastning och blir en extra service för gästen som inte behöver lämna sin plats för att beställa.<br><br><i>Anna Svedberg, Restaurangchef</i></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-12 col-lg-4"><img class="person" src="img/kunder/kimmo.jpg" alt="Frimis Salonger - Kimmo Kirvesmäki" title="Frimis Salonger - Kimmo Kirvesmäki"><img class="logotyp" src="img/kunder/1302.png" alt="Frimis Salonger" title="Frimis Salonger"></div>
+                        <div class="col-11 col-lg-7 speech-bubble">- Vi minskade personalbehovet och kunde öka försäljningen i Frimis Trädgård. Vi erbjöd gästerna både traditionell service vid bordet samt att de kunde beställa och betala direkt med Happy Order. Vi kommer absolut att använda denna
+                            lösning även för sommaren 2018.<br><br><i>Kimmo Kirvesmäki, Marknadschef</i></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-12 col-lg-4"><img class="person" src="img/kunder/robert.jpg" alt="Prison Island Örebro - Robert Eriksson" title="Prison Island Örebro - Robert Eriksson"><img class="logotyp" src="img/kunder/1300.png" alt="Prison Island Örebro" title="Prison Island Örebro"></div>
+                        <div class="col-11 col-lg-7 speech-bubble">- Vi har i dagsläget flera loger och konferensrum för gäster som vill svalka sig mellan våra aktiviteter. Nu kan gästerna enkelt beställa både mat och dryck direkt till sina rum och vi kan ge snabbare service.<br><br><i>Robert Eriksson, Platschef</i></div>
+                    </div>
+                </div>
+                <!--
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-4"><img class="person" src="img/kunder/farok.jpg" alt="Pitcher's i Karlstad - Farok Jodat" title="Pitcher's i Karlstad - Farok Jodat"><img class="logotyp" src="img/kunder/1303.png" alt="Pitcher's i Karlstad" title="Pitcher's i Karlstad"></div>
+                        <div class="col-7 speech-bubble">- Kommer snart...<br><br><i>Farok Jodat, VD</i></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-4"><img class="person" src="img/kunder/abbe.jpg" alt="Hotell Hjalmar - Abbe Kurt" title="Hotell Hjalmar - Abbe Kurt"><img class="logotyp" src="img/kunder/1304.png" alt="Hotell Hjalmar" title="Hotell Hjalmar"></div>
+                        <div class="col-7 speech-bubble">- Kommer snart...<br><br><i>Abbe Kurt, VD</i></div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h1>Vanliga frågor och svar</h1>
+            </div>
+            <div class="row questions">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <a class="active">Vad är Happy Order?</a>
+                        <div class="content active">
+                            <p>Vi erbjuder en tjänst som möjliggör för gästerna att själva beställa via appen. Gästen får snabbare hjälp, ett bekvämare besök och restaurangen spar in på personalresurser.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <a>Vad krävs för att komma igång med Happy Order?</a>
+                        <div class="content">
+                            <p>Happy Order kan vara igång hos er på 48 timmar. Slå oss en signal så sätter vi igång!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <a>Behöver vi byta kassasystem?</a>
+                        <div class="content">
+                            <p>Nej Happy Order fungerar oavsett vilket kassasystem ni använder.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <a>Hur fungerar betalningen?</a>
+                        <div class="content">
+                            <p>Alla betalningar går säkert via vår leverantör Stripe, som är en av världens största leverantör av digitala betaltjänster.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <a>Vad kostar det att använda Happy Order?</a>
+                        <div class="content">
+                            <p>Det kostar aldrig något för gästen och restaurangen betalar enbart för tjänsten när den används.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <a>Vart kan man använda Happy Order?</a>
+                        <div class="content">
+                            <p>Happy Order passar utmärkt på hotell, restauranger, nattklubbar och arenor.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <a>Kan företaget få en ”egen” app?</a>
+                        <div class="content">
+                            <p>Ja, vi erbjuder s.k ”white-label”-lösning. Kontakta oss för mer information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about text-center" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 my-auto"></div>
+                <div class="col-lg-8 my-auto">
+                    <div class="header-content mx-auto">
+                        <h1>Om Happy Order</h1>
+                        <p>Happy Order har sin kärnmarknad inom besöksnäringen i miljöer där det kan bli köer, väntetider och försämrad service. Den huvudsakliga affärsidén ska alltid vara att lösa problem i dessa miljöer både för kunden och företaget.</p>
+                        <p>Happy Order startades genom att Jonathan Ortheden och Rikard Bjerkenius fick en förfrågan om att förenkla beställningar och betalningar för LaWeKa-gruppen som äger och driver restauranger i Örebro.</p>
+                        <p>Tjänsten rullades ut på test under maj 2017 på totalt 850 sittplatser där man erbjöd gästen att själv kunna beställa via sin telefon.</p>
+                        <p>Resultatet slog mycket väl ut och flera inom branschen visade stort intresse. Duon beslutade att ta erfarenheterna från projektet och utveckla en fristående tjänst som idag heter Happy Order.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 my-auto">
+                    <div class="device-container">
+                        <img src="img/happyorder-logo-white.svg" class="img-fluid" alt="Happy Order">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="register" id="register">
+        <div class="register-content">
+            <div class="typeform-widget" data-url="https://happyorder.typeform.com/to/w24ntg"> </div>
+            <script>
+                (function() {
+                    var qs, js, q, s, d = document,
+                        gi = d.getElementById,
+                        ce = d.createElement,
+                        gt = d.getElementsByTagName,
+                        id = "typef_orm",
+                        b = "https://embed.typeform.com/";
+                    if (!gi.call(d, id)) {
+                        js = ce.call(d, "script");
+                        js.id = id;
+                        js.src = b + "embed.js";
+                        q = gt.call(d, "script")[0];
+                        q.parentNode.insertBefore(js, q)
+                    }
+                })()
+            </script>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1>Kontakta oss</h1>
+            <p class="info">Kontakta oss så hjälper vi er gärna att hitta en lösning som passar just er. Ni kan använda tjänsten som ett komplement till den traditionella servicen eller gå hela vägen och bli en app-restaurang. Oavsett så betalar ni bara för tjänsten
+                när den används och när den används så hoppas vi förbättra er service, minska personalbehovet och ger er nöjdare kunder!</p>
+
+            <div class="row">
+                <div class="col-lg-4 my-auto">
+                    <div class="inner contact">
+                        <!-- Form Area -->
+                        <div class="contact-form">
+                            <!-- Form -->
+                            <form id="contact-us" method="post" action="https://formspree.io/info@happyorder.io">
+                                <!-- Left Inputs -->
+                                <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                                    <!-- Name -->
+                                    <input type="text" name="name" id="name" required="required" class="form" placeholder="Vad heter du?" />
+                                    <!-- Email -->
+                                    <input type="text" name="_replyto" id="mail" required="required" class="form" placeholder="Epostadress" />
+                                    <!-- Phone -->
+                                    <input type="tel" name="mobile" id="mobile" required="required" class="form" placeholder="Mobilnummer" />
+                                </div>
+                                <!-- End Left Inputs -->
+                                <!-- Right Inputs -->
+                                <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                                    <!-- Message -->
+                                    <textarea name="message" id="message" class="form textarea" placeholder="Vad kan vi hjälpa dig med?"></textarea>
+                                </div>
+                                <!-- End Right Inputs -->
+                                <!-- Bottom Submit -->
+                                <div class="relative fullwidth col-xs-12">
+                                    <!-- Send Button -->
+                                    <button type="submit" id="submit" name="submit" class="form-btn semibold" onclick="goog_report_conversion()">Skicka meddelande!</button>
+                                </div>
+                                <!-- End Bottom Submit -->
+                                <!-- Clear -->
+                                <div class="clear"></div>
+                                <input type="hidden" name="_subject" value="Kontaktformulär" />
+                                <input type="hidden" name="_language" value="sv" />
+                                <input type="hidden" name="_format" value="plain" />
+                                <input type="hidden" name="_next" value="http://happyorder.io?msg=contact" />
+                            </form>
+
+                            <!-- Your Mail Message -->
+                            <div class="mail-message-area">
+                                <!-- Message -->
+                                <div class="alert gray-bg mail-message not-visible-message">
+                                    <strong>Thank You !</strong> Your email has been delivered.
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Contact Form Area -->
+                    </div>
+                    <!-- End Inner -->
+                </div>
+                <div class="col-lg-8">
+                    <div class="row text-center">
+                        <div class="col-lg-12">
+                            <img src="img/map.jpg" width="100%" alt="Hitta Happy Order">
+                        </div>
+                    </div>
+
+                    <div class="row text-center contactdivs">
+
+                        <div class="col-lg-4">
+                            <b>Sales:</b><br><a href="mailto:sales@happyorder.io">sales@happyorder.io</a>
+                            <span class="contactphone"><a href="tel:+46192777617" onclick="goog_report_conversion();">+46(0)19-27 77 617</a></span>
+                        </div>
+                        <div class="col-lg-4">
+                            <b>Support:</b><br><a href="mailto:support@happyorder.io">support@happyorder.io</a>
+                            <span><a href="tel:+46192777603" onclick="goog_report_conversion();">+46(0)19-27 77 603</a></span>
+                        </div>
+                        <div class="col-lg-4">
+                            <b>Utdelningsadress:</b><br>Happy Order AB<br> Apelvägen 30<br> 702 58 Örebro
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center logobot">
+                <div class="col-lg-12">
+                    <img src="img/happyorder-logo-smile.svg" class="logosmilee" alt="Happy Order">
+                </div>
+            </div>
+
+
+
+
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/happyorder.io/" target="_blank"><img class="social" src="img/icon-facebook.svg" alt="Följ oss på Facebook"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/happyorder.io/" target="_blank"><img class="social" src="img/icon-instagram.svg" alt="Följ oss på Instagram"></a>
+                </li>
+            </ul>
+            <p>&copy; 2017-2018 Happy Order AB. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">Allmänna villkor</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Sekretesspolicy</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#faq">FAQ</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="img/presskit.zip">Presskit</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Logga in</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-10">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6 col-sm-12">
+                                        <a href="#">
+                                            <img src="img/login-icon-user.png" alt="Logga in - Användare"> Användare
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <a href="http://admin.happyorder.io">
+                                            <img src="img/login-icon-company.png" alt="Logga in - Företag"> Företag
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i> Stäng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/intl-tel-input/utils.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+
+    <script type="text/javascript">
+        // <![CDATA[///////////Javascript
+        $(function() {
+            $("#frm").submit(function(e) {
+                e.preventDefault();
+                $.post("php/sendapplink.php", $("#frm").serialize(),
+                    function(data) {
+                        if (data.sms_sent == 'OK') {
+                            alert("Succé!");
+                        } else {
+                            alert("Något gick fel...");
+                        }
+                    }, "json");
+            });
+
+        });
+        // ]]>
+    </script>
+
+
+
+    <script>
+        const items = document.querySelectorAll(".accordion a");
+
+        function toggleAccordion() {
+            $('#faq > div > div.row > div > div > .active').removeClass('active');
+            this.classList.toggle('active');
+            this.nextElementSibling.classList.toggle('active');
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
+
+        $.fn.jQuerySimpleCounter = function(options) {
+            var settings = $.extend({
+                start: 0,
+                end: 100,
+                easing: 'linear',
+                duration: 400,
+                complete: ''
+            }, options);
+
+            var thisElement = $(this);
+
+            $({
+                count: settings.start
+            }).animate({
+                count: settings.end
+            }, {
+                duration: settings.duration,
+                easing: settings.easing,
+                step: function() {
+                    var mathCount = Math.ceil(this.count);
+                    thisElement.text(mathCount);
+                },
+                complete: settings.complete
+            });
+        };
+
+        $('#ho-orders').jQuerySimpleCounter({
+            start: 4761,
+            end: 4809,
+            duration: (2 * 60 * 1000)
+        });
+        $('#ho-customers').jQuerySimpleCounter({
+            start: 2772,
+            end: 2800,
+            duration: (2 * 60 * 1000)
+        });
+        $('#ho-products').jQuerySimpleCounter({
+            start: 9016,
+            end: 9107,
+            duration: (2 * 60 * 1000)
+        });
+        $('#ho-savings').jQuerySimpleCounter({
+            start: 216,
+            end: 240,
+            duration: (2 * 60 * 1000)
+        });
+
+
+
+        /* AUTHOR LINK */
+        $('.about-me-img').hover(function() {
+            $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
+        }, function() {
+            $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
+        });
+
+
+        $(window).scroll(function() {
+
+            if ($(window).scrollTop() < 0) {
+                return;
+            }
+
+            $(".img-bbb").css({
+                "top": ($(window).scrollTop() * 1.25) + "px",
+                "left": ($(window).scrollLeft()) + "px",
+            });
+
+
+            //console.log($(window).scrollTop());
+            /*
+            if ($(window).scrollTop() * 0.4 + 80 <= 150) {
+                $(".img-phones").css({
+                    "margin-bottom": ($(window).scrollTop() * 0.4 + 70) + "px"
+                });
+            }
+            */
+            if ($(window).scrollTop() < 120) {
+                $(".logo").css({
+                    "margin-top": (30 - $(window).scrollTop() * 0.30) + "px",
+                    "width": (100 - $(window).scrollTop() * 0.483) + "px"
+                });
+            }
+
+
+
+        });
+    </script>
+
+    <script>
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+        $(document).ready(function() {
+            if (getParameterByName('msg') == 'contact') {
+                $('.popup').show();
+            }
+        });
+        $(".popup").on("click", ".popup-close", function() {
+            $('.popup').hide();
+        });
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Happy Order AB",
+            "url": "https://happyorder.io/",
+            "sameAs": [
+                "https://www.facebook.com/happyorder.io/",
+                "",
+                "",
+                ""
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Happy Order AB",
+            "url": "https://happyorder.io/",
+            "logo": "http://happyorder.io/img/happy_logo_square.jpg",
+            "image": "http://happyorder.io/img/happy_logo_square.jpg",
+            "description": "Happy Order har en beprövad teknik för att låta kunden boka, beställa och betala smidigt och säkert direkt med sin telefon. Genom att kopiera och anpassa arbetsmomenten från restaurang, bar och kök fungerar tjänsten omgående och utan krångliga anpassningar och integrationer.",
+            "telephone": "+46 (0) 19-27 77 617",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Örebro",
+                "addressRegion": "",
+                "streetAddress": "Apelvägen 30",
+                "postalCode": "70358"
+            },
+            "openingHours": [
+                "Mo-Fr 09:00-17:00"
+            ]
+        }
+    </script>
+
+    <script id="mcjs">
+        ! function(c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+        }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/1b08df4c1408e0272c7ea2736/4e2a9a1884171621eaf368757.js");
+    </script>
+
+    <!-- Google Code for Kontaktformul&auml;r Conversion Page
+    In your html page, add the snippet and call
+    goog_report_conversion when someone clicks on the
+    chosen link or button. -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        goog_snippet_vars = function() {
+                var w = window;
+                w.google_conversion_id = 821948545;
+                w.google_conversion_label = "53YdCLbo630QgeH3hwM";
+                w.google_remarketing_only = false;
+            }
+            // DO NOT CHANGE THE CODE BELOW.
+        goog_report_conversion = function(url) {
+                goog_snippet_vars();
+                window.google_conversion_format = "3";
+                var opt = new Object();
+                opt.onload_callback = function() {
+                    if (typeof(url) != 'undefined') {
+                        window.location = url;
+                    }
+                }
+                var conv_handler = window['google_trackConversion'];
+                if (typeof(conv_handler) == 'function') {
+                    conv_handler(opt);
+                }
+            }
+            /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js">
+    </script>
+    <!-- begin olark code -->
+<script type="text/javascript" async> ;(function(o,l,a,r,k,y){if(o.olark)return; r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0]; y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r); y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)}; y.extend=function(i,j){y("extend",i,j)}; y.identify=function(i){y("identify",k.i=i)}; y.configure=function(i,j){y("configure",i,j);k.c[i]=j}; k=y._={s:[],t:[+new Date],c:{},l:a}; })(window,document,"static.olark.com/jsclient/loader.js");
+    /* custom configuration goes here (www.olark.com/documentation) */
+    olark.identify('3759-446-10-1158');</script>
+    <!-- end olark code -->
+    <script>olark.configure('system.group', 'ac4c33f27427d5387e444fc48f4bcd84'); /*Routes to Happy Sales */ </script>
+
+</body>
+
+</html>
