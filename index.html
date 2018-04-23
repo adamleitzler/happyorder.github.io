@@ -54,7 +54,6 @@
             width: 100vw;
             height: 400px;
         }
-
         .contactphone {
             margin-top: 10px;
         }
@@ -64,6 +63,24 @@
 
 <body id="page-top">
 
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/sv_SE/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution="setup_tool"
+  page_id="1028881393885132"
+  theme_color="#D3364F"
+  logged_in_greeting="Hej! Vill du bli apprestaurang eller har du frågor om hur appen fungerar?"
+  logged_out_greeting="Hej! Vill du bli apprestaurang eller har du frågor om hur appen fungerar?">
+</div>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH68L7Q"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -616,7 +633,6 @@
                         }
                     }, "json");
             });
-
         });
         // ]]>
     </script>
@@ -625,17 +641,12 @@
 
     <script>
         const items = document.querySelectorAll(".accordion a");
-
         function toggleAccordion() {
             $('#faq > div > div.row > div > div > .active').removeClass('active');
             this.classList.toggle('active');
             this.nextElementSibling.classList.toggle('active');
         }
-
         items.forEach(item => item.addEventListener('click', toggleAccordion));
-
-
-
         $.fn.jQuerySimpleCounter = function(options) {
             var settings = $.extend({
                 start: 0,
@@ -644,9 +655,7 @@
                 duration: 400,
                 complete: ''
             }, options);
-
             var thisElement = $(this);
-
             $({
                 count: settings.start
             }).animate({
@@ -661,7 +670,6 @@
                 complete: settings.complete
             });
         };
-
         $('#ho-orders').jQuerySimpleCounter({
             start: 4761,
             end: 4809,
@@ -682,29 +690,20 @@
             end: 240,
             duration: (2 * 60 * 1000)
         });
-
-
-
         /* AUTHOR LINK */
         $('.about-me-img').hover(function() {
             $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
         }, function() {
             $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
         });
-
-
         $(window).scroll(function() {
-
             if ($(window).scrollTop() < 0) {
                 return;
             }
-
             $(".img-bbb").css({
                 "top": ($(window).scrollTop() * 1.25) + "px",
                 "left": ($(window).scrollLeft()) + "px",
             });
-
-
             //console.log($(window).scrollTop());
             /*
             if ($(window).scrollTop() * 0.4 + 80 <= 150) {
@@ -719,9 +718,6 @@
                     "width": (100 - $(window).scrollTop() * 0.483) + "px"
                 });
             }
-
-
-
         });
     </script>
 
@@ -819,12 +815,6 @@
     </script>
     <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js">
     </script>
-    <!-- begin olark code -->
-<script type="text/javascript" async> ;(function(o,l,a,r,k,y){if(o.olark)return; r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0]; y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r); y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)}; y.extend=function(i,j){y("extend",i,j)}; y.identify=function(i){y("identify",k.i=i)}; y.configure=function(i,j){y("configure",i,j);k.c[i]=j}; k=y._={s:[],t:[+new Date],c:{},l:a}; })(window,document,"static.olark.com/jsclient/loader.js");
-    /* custom configuration goes here (www.olark.com/documentation) */
-    olark.identify('3759-446-10-1158');</script>
-    <!-- end olark code -->
-    <script>olark.configure('system.group', 'ac4c33f27427d5387e444fc48f4bcd84'); /*Routes to Happy Sales */ </script>
 
 </body>
 
