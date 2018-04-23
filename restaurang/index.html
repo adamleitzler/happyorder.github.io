@@ -18,6 +18,25 @@
 
 <body>
 
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/sv_SE/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution="setup_tool"
+  page_id="1028881393885132"
+  theme_color="#D3364F"
+  logged_in_greeting="Hej! Vill du bli apprestaurang eller har du frågor om hur appen fungerar?"
+  logged_out_greeting="Hej! Vill du bli apprestaurang eller har du frågor om hur appen fungerar?">
+</div>
+
     <!-- Start .header-section -->
     <div id="home" class="header-section half-header section gradiant-background">
         <div id="particles-js" class="particles-container"></div>
@@ -259,7 +278,6 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h2 class="heading">Screenshots</h2>
                         <p>Nam et sagittis diam. Sed tempor augue sit amet egestas scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
                     </div>
                 </div>
             </div>
@@ -281,9 +299,7 @@
                 </div>
                
             </div>
-
             <div class="row text-center">
-
                 <ul class="download-buttons">
                     <li>
                         <a href="#"><img src="images/google-play.png" alt="google-play" /></a>
@@ -292,12 +308,10 @@
                         <a href="#"><img src="images/app-store.png" alt="app-store" /></a>
                     </li>
                 </ul>
-
             </div>
            
         </div>
         
-
     </div> -->
    
 
@@ -627,7 +641,6 @@
                  
                     </div>
                 </div>
-
                 <div class="col-md-3 col-sm-6">
                     <div class="team-member">
                         <div class="team-photo">
@@ -992,26 +1005,18 @@
             console.log(ui.value);
             if (ui.value == 0) {$( "#amount" ).html("0 kr");}
             if (ui.value == 100) {$( "#amount" ).html("200 000 kr+");}
-
             if (ui.value < 10) { $("#amountfee").html('4,95 %') }
             if (ui.value >= 10 && ui.value < 25) { $("#amountfee").html('4,25 %') }
             if (ui.value >= 25 && ui.value < 50) { $("#amountfee").html('3,95 %') }
             if (ui.value >= 50 && ui.value < 99) { $("#amountfee").html('3,25 %') }
             if (ui.value == 100) { $("#amountfee").html('2,95 %') }
-
         }
         });
         $(".ui-slider-handle").text("<>");
         $( "#amount" ).html((($( "#slider-range-min" ).slider( "value")*2) + " 000 kr") );
     });
     </script>
-    <!-- begin olark code -->
-<script type="text/javascript" async> ;(function(o,l,a,r,k,y){if(o.olark)return; r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0]; y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r); y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)}; y.extend=function(i,j){y("extend",i,j)}; y.identify=function(i){y("identify",k.i=i)}; y.configure=function(i,j){y("configure",i,j);k.c[i]=j}; k=y._={s:[],t:[+new Date],c:{},l:a}; })(window,document,"static.olark.com/jsclient/loader.js");
-    /* custom configuration goes here (www.olark.com/documentation) */
-    olark.identify('3759-446-10-1158');</script>
-    <!-- end olark code -->
-    <script>olark.configure('system.group', 'ac4c33f27427d5387e444fc48f4bcd84'); /*Routes to Happy Sales */ </script>
-
+    
 </body>
 
 </html>
